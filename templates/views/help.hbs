@@ -7,27 +7,52 @@
     {{>favicon}}
     <title>{{title}} </title>
     {{>bootstrap.min}}
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <link rel="stylesheet" href="./src/css/weather-ui.css">
+    <style>
+        .centering>p {
+            font-size: larger;
+            text-align: left;
+            padding-left: 30%;
+        }
+
+        .centering>p:first-child {
+            padding-top: 55% !important;
+        }
+    </style>
 </head>
 
 <body class="text-center">
     {{>navbar}}
     <div class="main-content">
         <div class="container-fluid p-0">
-            <div class="jumbotron">
-                <h2>{{head}}</h2>
-                <p class="lead">
-                    This Project Is Made With NodeJS ❤ <BR>Using Some Powerful Weather API From Darkskyapi
-                    and
-                    Geo-coding API Form Mapbox 🔥
-                </p>
-
-                <hr class="my-4">
-                <p>Weather-UI Helps To Get Overview Of Weather Easily In Just One Click</p>
-                <a class="btn btn-success btn-sm" href="#" role="button">Let's GO</a>
+            <div class="jumbotron mb-0">
+                <div class="centering">
+                    <h2>{{head}}</h2>
+                    <h4>You can contact me using following platforms :)</h4>
+                    <br><br>
+                    <p>
+                        <span>
+                            Instagram: <a target="_blank" href="https://instagram.com/anikethirpara">@anikethirpara</a>
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            LinkedIn: <a target="_blank" href="https://www.linkedin.com/aniket-hirpara-0b4747151">Aniket
+                                Hirpara</a>
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            Mail: <a target="_blank" href="mailto:gdg4dev@gmail.com">gdg4dev@gmail.com</a>
+                        </span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     {{>footer}}
+
 </body>
 
 </html>
