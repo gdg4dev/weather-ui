@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3000
 const viewPath = path.join(__dirname, '/templates/views')
 const partialsPath = path.join(__dirname, '/templates/partials')
 const publicPath = path.join(__dirname, './public')
@@ -49,7 +50,7 @@ app.get('*', (req, res) => {
     res.redirect('404.html')
 
 })
-app.listen(3000, () => {
-    console.log('Server successfully started at port 3000')
+app.listen(port, () => {
+    console.log('Server successfully started at port ' + port)
 })
 

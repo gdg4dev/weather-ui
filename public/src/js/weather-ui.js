@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
     }
     preloader.setAttribute("id", "show");
     const input = document.querySelector('input').value
-    const url = 'http://localhost:3000/weather?location=' + input
+    const url = '/weather?location=' + input
     fetch(url).then((res) => {
         res.json().then((data) => {
             preloader.removeAttribute('id', 'show')
