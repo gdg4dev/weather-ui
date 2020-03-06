@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) => {
     const url = '/weather?location=' + input
     fetch(url).then((res) => {
         res.json().then((data) => {
-            preloader.removeAttribute('id', 'show')
+            preloader.removeAttribute('id', 'show');
             if (data.error) {
                 if (wSummary.hasAttribute('id', 'show')) {
                     wSummary.removeAttribute('id', 'show')
