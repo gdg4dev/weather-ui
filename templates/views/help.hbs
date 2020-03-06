@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>favicon}}
+    <title>{{title}} </title>
+    {{>bootstrap.min}}
+</head>
+
+<body class="text-center">
+    {{>navbar}}
+    <div class="main-content">
+        <div class="container-fluid p-0">
+            <div class="jumbotron">
+                <h2>{{head}}</h2>
+                <p class="lead">
+                    This Project Is Made With NodeJS ❤ <BR>Using Some Powerful Weather API From Darkskyapi
+                    and
+                    Geo-coding API Form Mapbox 🔥
+                </p>
+
+                <hr class="my-4">
+                <p>Weather-UI Helps To Get Overview Of Weather Easily In Just One Click</p>
+                <a class="btn btn-success btn-sm" href="#" role="button">Let's GO</a>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
